@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   const callback = (entries) => {
-    console;
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log(entry.target);
+        const img = entry.target;
+        const imageReal = img.dataset.src;
 
-        const imageReal = entry.target.dataset.src;
-        entry.target.src = imageReal;
+        img.src = imageReal;
       }
     });
   };
