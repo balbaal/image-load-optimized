@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
   const callback = (entries) => {
-    console.log(entries, '>>> entries');
+    console;
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log(entry.target);
+
+        const imageReal = entry.target.dataset.src;
+        entry.target.src = imageReal;
+      }
+    });
   };
 
   const options = {
