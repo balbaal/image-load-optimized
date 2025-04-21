@@ -6,7 +6,80 @@
     <link rel="stylesheet" href="/styles/output.css" />
     <title>Image Load Optimized</title>
   </head>
-  <body>
-    <h1 class="text-red-500 text-xl font-semibold">Image Load Optimized</h1>
+  <body class="px-6 xl:px-0 max-w-7xl m-auto">
+    <header class="flex flex-row gap-4 items-center py-2.5">
+      <svg
+        class="E18si"
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        version="1.1"
+        aria-labelledby="unsplash-home"
+        aria-hidden="false"
+        style="flex-shrink: 0"
+      >
+        <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+      </svg>
+      <div
+        class="w-full flex flex-row gap-2 items-center rounded-full px-4 py-2.5 bg-gray-100 focus-within:bg-white border-2 border-gray-100 text-gray-500"
+      >
+        <svg
+          class="G2kxY PABRJ qI43S"
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          version="1.1"
+          aria-hidden="false"
+          style="flex-shrink: 0"
+        >
+          <path
+            fill="gray"
+            d="M16.5 15c.9-1.2 1.5-2.8 1.5-4.5C18 6.4 14.6 3 10.5 3S3 6.4 3 10.5 6.4 18 10.5 18c1.7 0 3.2-.5 4.5-1.5l4.6 4.5 1.4-1.5-4.5-4.5zm-6 1c-3 0-5.5-2.5-5.5-5.5S7.5 5 10.5 5 16 7.5 16 10.5 13.5 16 10.5 16z"
+          ></path>
+        </svg>
+        <input
+          type="text"
+          class="w-full focus:outline-0"
+          placeholder="Search photos and illustrations"
+        />
+      </div>
+      <div class="flex flex-row gap-4 items-center w-[300px] justify-end">
+        <button
+          class="cursor-pointer text-gray-500 font-semibold hover:text-gray-700"
+        >
+          Login
+        </button>
+        <button
+          class="cursor-pointer text-gray-500 font-semibold rounded-lg border-2 border-gray-300 px-2.5 py-1 hover:text-gray-700 hover:border-gray-700"
+        >
+          Submit an image
+        </button>
+      </div>
+    </header>
+    <div
+      id="content-wrapper"
+      class="grid grid-cols-1 gap-4 mt-10 md:grid-cols-3 md:gap-6"
+    >
+      <img
+        alt="image-1"
+        src="/assets/image-1-placeholder.png"
+        data-src="/assets/image-1.avif"
+        class="w-full h-[250px] object-cover object-center"
+      />
+      <img
+        alt="image-1"
+        src="/assets/image-1-placeholder.png"
+        data-src="/assets/image-1.avif"
+        class="w-full h-[250px] object-cover object-center"
+      />
+      <img
+        alt="image-1"
+        src="/assets/image-1-placeholder.png"
+        data-src="/assets/image-1.avif"
+        class="w-full h-[250px] object-cover object-center"
+      />
+    </div>
+
+    <script src="/src/index.js"></script>
   </body>
 </html>
