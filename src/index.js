@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const imageReal = img.dataset.src;
 
         img.src = imageReal;
+        observer.unobserve(img);
       }
     });
   };
